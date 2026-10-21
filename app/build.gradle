@@ -3,11 +3,11 @@ plugins {
 }
 
 android {
-    namespace 'com.example.lsposedmodule'
+    namespace 'com.example.module'
     compileSdk 34
 
     defaultConfig {
-        applicationId "com.example.lsposedmodule"
+        applicationId "com.example.module"
         minSdk 24
         targetSdk 34
         versionCode 1
@@ -21,6 +21,6 @@ android {
 }
 
 dependencies {
-    // 官方正确的稳定依赖
-    compileOnly 'io.github.libxposed:api:100'
+    // 适配你 MainModule.java 里面 de.robv.android.xposed 的 API 依赖
+    compileOnly 'de.robv.android.xposed:api:82'
 }
