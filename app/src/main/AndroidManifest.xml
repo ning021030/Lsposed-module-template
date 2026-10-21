@@ -6,7 +6,6 @@
         android:label="@string/app_name"
         android:supportsRtl="true">
 
-        <!-- 告诉 LSPosed 这是标准的 Xposed 传统模块，开启动态作用域选择 -->
         <meta-data
             android:name="xposedmodule"
             android:value="true" />
