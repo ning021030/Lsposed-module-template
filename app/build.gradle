@@ -21,6 +21,6 @@ android {
 }
 
 dependencies {
-    // 强制使用现代动态作用域的标准库
-    compileOnly 'io.github.libxposed:api:100'
+    // 适配你 MainModule.java 源码的官方传统 API
+    compileOnly 'de.robv.android.xposed:api:82'
 }
