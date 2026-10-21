@@ -9,17 +9,14 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.LsposedModuleTemplate">
 
-        <!-- 声明这是一个 Xposed 模块 -->
         <meta-data
             android:name="xposedmodule"
             android:value="true" />
-        
-        <!-- 模块描述 -->
+            
         <meta-data
             android:name="xposeddescription"
             android:value="Apex Master Anti-Cheat & Ad Engine" />
-        
-        <!-- 最低支持的 Xposed 版本 -->
+            
         <meta-data
             android:name="xposedminversion"
             android:value="82+" />
