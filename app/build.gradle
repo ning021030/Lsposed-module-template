@@ -21,6 +21,6 @@ android {
 }
 
 dependencies {
-    // 经典 API 82 依赖
-    compileOnly 'de.robv.android.xposed:api:82'
+    // 现代 LSPosed 标准接口，消除红字停用
+    compileOnly 'io.github.libxposed:api:100'
 }
