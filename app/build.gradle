@@ -21,7 +21,6 @@ android {
 }
 
 dependencies {
-    // 引入支持最新 LSPosed (API 100/101+) 的现代 libxposed 接口库
-    compileOnly 'io.github.libxposed:api:100'
-    compileOnly 'io.github.libxposed:service:100'
+    // libxposed 官方标准 API 库（包含 API 100/101+ 规范）
+    compileOnly 'io.github.libxposed:api:100.0.0'
 }
