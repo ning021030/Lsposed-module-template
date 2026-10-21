@@ -2,6 +2,10 @@ plugins {
     id 'com.android.library'
 }
 
+plugins {
+    id 'com.android.library'
+}
+
 android {
     namespace 'io.github.libxposed'
     compileSdk {
@@ -10,6 +14,16 @@ android {
         }
     }
 
+    defaultConfig {
+        minSdk 24
+        targetSdk 36
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_21
+        targetCompatibility JavaVersion.VERSION_21
+    }
+}
     defaultConfig {
         minSdk 24
         targetSdk 36
