@@ -6,24 +6,18 @@
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
-        android:supportsRtl="true"
-        android:theme="@style/Theme.LsposedModuleTemplate">
+        android:supportsRtl="true">
 
-        <!-- 声明 Xposed 模块 -->
+        <!-- Xposed 核心声明 -->
         <meta-data
             android:name="xposedmodule"
             android:value="true" />
         <meta-data
             android:name="xposeddescription"
-            android:value="Apex Master Anti-Cheat &amp; Ad Engine" />
+            android:value="Apex Master Engine" />
         <meta-data
             android:name="xposedminversion"
-            android:value="82+" />
-            
-        <!-- 核心：移除静态作用域限制，允许作用域覆盖所有应用 -->
-        <meta-data
-            android:name="xposedscope"
-            android:resource="@null" />
+            android:value="82" />
 
     </application>
 
