@@ -1,12 +1,19 @@
+pluginManagement {
+    repositories {
+        google()
+        mavenCentral()
+        gradlePluginPortal()
+    }
+}
 dependencyResolutionManagement {
     repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
     repositories {
         google()
         mavenCentral()
-        maven { url 'https://api.xposed.info/' }
+        maven { url 'https://api.xposed.info/' } // Xposed 官方 API 仓库
         maven { url 'https://jitpack.io' }
     }
 }
 
-rootProject.name = "Lsposed-module-template"
+rootProject.name = "LSPosedModule"
 include ':app'
