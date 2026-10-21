@@ -10,10 +10,8 @@ dependencyResolutionManagement {
     repositories {
         google()
         mavenCentral()
-        maven { url 'https://jitpack.io' }
     }
 }
 
 rootProject.name = "Lsposed-module-template"
 include ':app'
-include ':libxposed-compat'
