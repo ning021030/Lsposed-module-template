@@ -1,25 +1,12 @@
-plugins {
-    id 'com.android.application'
-}
-
-android {
-    namespace 'com.example.lsposedmodule'
-    compileSdk 34
-
-    defaultConfig {
-        applicationId "com.example.lsposedmodule"
-        minSdk 24
-        targetSdk 34
-        versionCode 1
-        versionName "1.0"
-    }
-
-    compileOptions {
-        sourceCompatibility JavaVersion.VERSION_17
-        targetCompatibility JavaVersion.VERSION_17
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+        maven { url 'https://api.xposed.info/' }
+        maven { url 'https://jitpack.io' }
     }
 }
 
-dependencies {
-    compileOnly 'de.robv.android.xposed:api:82'
-}
+rootProject.name = "Lsposed-module-template"
+include ':app'
