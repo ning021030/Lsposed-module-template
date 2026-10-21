@@ -21,6 +21,6 @@ android {
 }
 
 dependencies {
-    // libxposed 官方标准 API 库（包含 API 100/101+ 规范）
-    compileOnly 'io.github.libxposed:api:100.0.0'
+    // 官方正确的稳定依赖
+    compileOnly 'io.github.libxposed:api:100'
 }
