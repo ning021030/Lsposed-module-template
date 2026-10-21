@@ -1,26 +1,19 @@
-plugins {
-    id 'com.android.application'
-}
-
-android {
-    namespace 'com.example.lsposedmodule'
-    compileSdk 34
-
-    defaultConfig {
-        applicationId "com.example.lsposedmodule"
-        minSdk 24
-        targetSdk 34
-        versionCode 1
-        versionName "1.0"
-    }
-
-    compileOptions {
-        sourceCompatibility JavaVersion.VERSION_17
-        targetCompatibility JavaVersion.VERSION_17
+pluginManagement {
+    repositories {
+        google()
+        mavenCentral()
+        gradlePluginPortal()
     }
 }
 
-dependencies {
-    // 只保留官方的 api 依赖，去掉找不到的 service 依赖
-    compileOnly 'io.github.libxposed:api:100'
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+        maven { url 'https://jitpack.io' }
+    }
 }
+
+rootProject.name = "Lsposed-module-template"
+include ':app'
